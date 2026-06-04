@@ -1,29 +1,41 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/site/Nav";
+import { Hero } from "@/components/site/Hero";
+import { About } from "@/components/site/About";
+import { Features } from "@/components/site/Features";
+import { Showcase } from "@/components/site/Showcase";
+import { Waitlist } from "@/components/site/Waitlist";
+import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Exotic Modz — Build It. Race It. Own The Night." },
+      { name: "description", content: "Exotic Modz is the next-gen automotive sandbox. Engineer hypercars, dominate neon-lit streets, and join the waitlist for closed beta." },
+      { property: "og:title", content: "Exotic Modz — Build It. Race It. Own The Night." },
+      { property: "og:description", content: "The next-gen automotive sandbox. Join 42K+ drivers on the waitlist." },
+    ],
+    links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background text-foreground">
+      <Nav />
+      <main>
+        <Hero />
+        <About />
+        <Features />
+        <Showcase />
+        <Waitlist />
+      </main>
+      <Footer />
     </div>
   );
 }
