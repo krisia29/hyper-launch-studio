@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "ExoticModz" },
+      { name: "description", content: "Game Launch Studio creates visually impressive, modern promotional websites for upcoming game apps." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "ExoticModz" },
+      { property: "og:description", content: "Game Launch Studio creates visually impressive, modern promotional websites for upcoming game apps." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "ExoticModz" },
+      { name: "twitter:description", content: "Game Launch Studio creates visually impressive, modern promotional websites for upcoming game apps." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a47ea3d6-4e74-40de-bf93-f7939240d9ac/id-preview-95496ecb--10a3411c-eb78-47f9-a56d-e9ebf8a5416f.lovable.app-1780608412263.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a47ea3d6-4e74-40de-bf93-f7939240d9ac/id-preview-95496ecb--10a3411c-eb78-47f9-a56d-e9ebf8a5416f.lovable.app-1780608412263.png" },
     ],
     links: [
       {
