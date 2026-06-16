@@ -7,6 +7,7 @@ export function Nav() {
     { href: "/#showcase", label: "Showcase" },
     { to: "/purpose", label: "Purpose & Goals" },
     { to: "/sponsors", label: "Sponsors & Funders" },
+    { to: "/team", label: "Our Team" },
     { href: "/#waitlist", label: "Waitlist" },
   ] as const;
   return (
